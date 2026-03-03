@@ -1,3 +1,6 @@
+import pyttsx3
+speaker = pyttsx3.init()
+
 adjective1 = input("Enter the adjective 1: ")
 adjective2 = input("Enter the adjective 2: ")
 adjective3 = input("Enter the adjective 3: ")
@@ -16,4 +19,5 @@ park with my {noun}. We saw a {adjective2} dog that was {verb_ending_ing1} aroun
 Suddenly, a {adjective3} man appeared and started to {verb} loudly. Everyone looked at him like he was a {animal} wearing a {clothing}! \
 I couldn't stop {verb_ending_ing2} because it was the most {adjective4} day of my life. In the end, we all went home feeling {emotion} and a little bit {adjective5}."
 
-print(madlib)
+speaker.say(madlib)
+speaker.runAndWait()
